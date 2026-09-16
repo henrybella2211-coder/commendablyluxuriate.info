@@ -1,26 +1,150 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #161513;
+  --fg: #f2eee6;
+  --gold: #b08d57;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-gold: var(--gold);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-manrope);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--gold);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.prose-editorial p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  line-height: 1.75;
+}
+
+.prose-editorial h2 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-top: 2.75em;
+  margin-bottom: 0.75em;
+  letter-spacing: 0.01em;
+}
+
+.prose-editorial h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+.prose-editorial ul,
+.prose-editorial ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.4em;
+  line-height: 1.75;
+}
+
+.prose-editorial li {
+  margin-top: 0.4em;
+}
+
+.prose-editorial ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.prose-editorial ul li {
+  padding-left: 1.4em;
+  position: relative;
+}
+
+.prose-editorial ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.prose-editorial a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
+}
+
+.prose-editorial a:hover {
+  color: var(--gold);
+}
+
+.prose-editorial table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.95rem;
+}
+
+.prose-editorial th,
+.prose-editorial td {
+  text-align: left;
+  padding: 0.85em 1em;
+  border-bottom: 1px solid rgba(176, 141, 87, 0.35);
+  vertical-align: top;
+}
+
+.prose-editorial th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+}
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  height: 1px;
+  background: var(--gold);
+  transition: right 0.25s ease;
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  right: 0;
 }
