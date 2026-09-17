@@ -154,6 +154,17 @@ export default function Page() {
         actually vape, not according to what looks most impressive in a shop
         window.
       </p>
+      <p>
+        One related question worth asking before you spend at all is whether
+        you need one device or would genuinely benefit from two, a compact
+        one for out and about and a larger-battery one for home, say, rather
+        than stretching a single kit to cover every situation. We weigh that
+        decision honestly in{" "}
+        <Link href="/guides/owning-more-than-one-vape-kit">
+          the case for owning more than one vape kit
+        </Link>
+        .
+      </p>
     </ArticleLayout>
   );
 }

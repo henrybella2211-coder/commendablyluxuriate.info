@@ -63,6 +63,38 @@ export const articles: Article[] = [
       height: 1250,
     },
   },
+  {
+    slug: "uwell-aspire-quieter-craftsmanship",
+    title: "Uwell and Aspire: a quieter kind of craftsmanship",
+    excerpt:
+      "An editorial look at how Uwell and Aspire tend to build their higher-end pod kits around restraint and coil consistency rather than spectacle, set against the flagship theatrics covered elsewhere on this site.",
+    category: "Brand comparison",
+    readTime: "8 min read",
+    lastUpdatedISO: "2026-09-16",
+    lastUpdatedDisplay: "Last updated 16 September 2026",
+    image: {
+      src: "/images/pod-device-matte-grey-smoke.jpg",
+      alt: "A single matte grey pod vape device photographed close up against a softly lit smoke backdrop",
+      width: 2400,
+      height: 3600,
+    },
+  },
+  {
+    slug: "owning-more-than-one-vape-kit",
+    title: "The case for owning more than one vape kit",
+    excerpt:
+      "A genuinely weighed look at why some vapers keep more than one device, from a spare while a coil beds in to separate kits for home and out and about, set fairly against the case for owning just one.",
+    category: "Buying guidance",
+    readTime: "8 min read",
+    lastUpdatedISO: "2026-09-17",
+    lastUpdatedDisplay: "Last updated 17 September 2026",
+    image: {
+      src: "/images/pair-of-pod-kits-side-by-side.jpg",
+      alt: "Two different pod vape kits placed side by side on a table, photographed close up",
+      width: 2400,
+      height: 1875,
+    },
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
