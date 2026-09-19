@@ -95,6 +95,22 @@ export const articles: Article[] = [
       height: 1875,
     },
   },
+  {
+    slug: "al-fakher-hypermax-prime-50k-finish-and-build",
+    title: "Al Fakher's HyperMax Prime 50K: an editorial look at its finish and build",
+    excerpt:
+      "A considered look at the rechargeable HyperMax Prime 50K's finish, its snap-pod mechanism and how its mainstream design brief compares in philosophy to the flagship pod kits covered elsewhere on this site.",
+    category: "Device spotlight",
+    readTime: "9 min read",
+    lastUpdatedISO: "2026-09-19",
+    lastUpdatedDisplay: "Last updated 19 September 2026",
+    image: {
+      src: "/images/device-black-red-backdrop.jpg",
+      alt: "A matte black rechargeable pod vape device standing upright against a deep red and black studio backdrop",
+      width: 2000,
+      height: 2496,
+    },
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

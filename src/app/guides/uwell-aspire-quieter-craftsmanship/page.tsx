@@ -170,6 +170,16 @@ export default function Page() {
         </Link>{" "}
         looks at that decision honestly.
       </p>
+      <p>
+        Restraint is not the only alternative to flagship theatrics, either.
+        Our piece on{" "}
+        <Link href="/guides/al-fakher-hypermax-prime-50k-finish-and-build">
+          Al Fakher&apos;s HyperMax Prime 50K
+        </Link>{" "}
+        looks at a rechargeable pod kit built to a still narrower brief than
+        anything covered above: low cost and a wide flavour wall, rather
+        than coil consistency or chassis materials at all.
+      </p>
     </ArticleLayout>
   );
 }
