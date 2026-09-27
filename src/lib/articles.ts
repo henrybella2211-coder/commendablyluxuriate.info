@@ -111,6 +111,22 @@ export const articles: Article[] = [
       height: 2496,
     },
   },
+  {
+    slug: "why-experienced-vapers-choose-lower-nicotine-strengths",
+    title: "Why more experienced vapers are choosing lower nicotine strengths",
+    excerpt:
+      "An editorial look at why some long-term vapers move down in strength rather than up, from shifting consumption patterns to larger devices used more often, not a recommendation that it suits everyone.",
+    category: "Nicotine strength",
+    readTime: "8 min read",
+    lastUpdatedISO: "2026-09-27",
+    lastUpdatedDisplay: "Last updated 27 September 2026",
+    image: {
+      src: "/images/eliquid-bottle-and-pod-device.jpg",
+      alt: "A 10ml nic salt e-liquid bottle showing its nicotine strength on the label, standing next to a pod vape device",
+      width: 2400,
+      height: 3027,
+    },
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

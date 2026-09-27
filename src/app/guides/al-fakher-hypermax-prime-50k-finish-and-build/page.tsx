@@ -104,6 +104,11 @@ export default function Page() {
         kits are typically sold alongside refill e-liquid at the 10ml cap per
         bottle, with nicotine salts available up to the UK&apos;s 20mg/ml
         limit and some lower-strength freebase options depending on flavour.
+        For readers weighing up strength rather than hardware, our piece on{" "}
+        <Link href="/guides/why-experienced-vapers-choose-lower-nicotine-strengths">
+          why more experienced vapers are choosing lower nicotine strengths
+        </Link>{" "}
+        looks at that decision in more detail.
       </p>
 
       <h2>Battery, charging and the puff-count claim</h2>
